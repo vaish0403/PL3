@@ -1,0 +1,142 @@
+<!DOCTYPE html5>
+<html>
+<head>
+	<title>GATE Registration</title>
+</head>
+
+<body>
+<header><h1>GATE Registration</h1></header>
+
+<form autocomplete="on">
+
+<fieldset>
+<legend>Student Information</legend>
+<label for="fname">First name:</label><br>
+<input type="text" id="fname" name="fname" placeholder="Vaishnavi"><br>
+<label for="mname">Middle name:</label><br>
+<input type="text" id="mname" name="mname" placeholder="Shahaji"><br>
+<label for="lname">Last name:</label><br>
+<input type="text" id="lname" name="lname" placeholder="Patil"><br><br>
+
+<label for="pname">Parent's name:</label><br>
+<input type="text" id="pname" name="pname" placeholder="Shahaji Balaso Patil"><br><br>
+
+<label for="mobno">Mobile No.:</label><br>
+<input type="text" id="mobno" name="mobno" placeholder="7620679975"><br>
+
+<label for="email">Email ID:</label><br>
+<input type="text" id="email" name="email" placeholder="abc@gmail.com"><br><br>
+
+<label for="idp">ID Proof:</label><br>
+<input type="file" id="idp" name="idcp"><br><br>
+
+<label for="add">Address:</label><br>
+<textarea id="add" name="address" rows="5" cols="40" placeholder="Plot No.123, abc road, Kolhapur."></textarea><br><br>
+
+</fieldset>
+
+<fieldset>
+<legend>Educational Information</legend>
+<label for="qual">Qualification:</label><br>
+<select name="qual" id="qual" size='2' required>
+  <option value="btech">B.Tech.</option>
+  <option value="be">B.E.</option>
+  <option value="barch">B.Arch.</option>
+  <option value="bsc">B.Sc.</option>
+</select><br><br>
+
+<label for="branch">Branch:</label><br>
+<select name="branch" id="branch"size='3' required>
+  <option value="cse">Computer Science and information Technology</option>
+  <option value="ee">Electrical Engineering</option>
+  <option value="cv">Civil Engineering</option>
+  <option value="mech">Mechanical Engineering</option>
+  <option value="ec">Electronics and Communication Engineering</option>
+  <option value="ph">Physics</option>
+  <option value="Instrumentation">Instrumentation</option>
+</select><br><br>
+
+<label for="collegename">Choose your College Name from the list:</label>
+<input list="collegenames" name="collegename" id="collegename">
+<datalist id="collegenames">
+  <option value="Walchand College of Engineering, Sangli">
+  <option value="CoEP">
+  <option value="IITB">
+  <option value="IITKGP">
+  <option value="PICT">
+  <option value="NIT Trichy">
+  <option value="NIT Warangal">
+  <option value="ICT">
+  <option value="VJTI">
+  <option value="VIT">
+</datalist><br><br>
+
+<label for="universityname">Choose your University Name from the list:</label>
+<input list="universitynames" name="universityname" id="universityname">
+<datalist id="universitynames">
+  <option value="Shivaji University Kolhapur">
+  <option value="Savitribai Phule University Punre">
+  <option value="University of Mumbai">
+  <option value="IITKGP">
+  <option value="IITB">
+  <option value="NIT Trichy">
+  <option value="NIT Warangal">
+</datalist><br><br>
+
+<label for="examseatno">Exam Seat Number:</label><br>
+<input type="text" id="examseatno" name="examseatno" placeholder="gate2021"><br>
+
+</fieldset>
+
+<fieldset>
+<legend>Exam Preferences</legend>
+<label for="pbranch">Gate Exam Paper Branch:</label><br>
+<select name="pbranch" id="branch" required>
+  <option value="cse">Computer Science and information Technology</option>
+  <option value="ee">Electrical Engineering</option>
+  <option value="cv">Civil Engineering</option>
+  <option value="mech">Mechanical Engineering</option>
+  <option value="ec">Electronics and Communication Engineering</option>
+  <option value="ph">Physics</option>
+  <option value="ma">Maths</option>
+</select><br><br>
+
+<label for="cities">Exam cities preference:</label>
+<select  name="cities" id="cities" required>
+  <optgroup label="Maharashtra">
+    <option value="mumbai">Mumbai</option>
+    <option value="Pune">Pune</option>
+	<option value="nashik">Nashik</option>
+	<option value="kolhapur">Kolhapur</option>
+	<option value="nagpur">Nagpur</option>
+  </optgroup>
+  <optgroup label="Karnataka">
+    <option value="bagalkot">bagalkot</option>
+    <option value="bengaluru">bengaluru</option>
+	<option value="belagavi">belagavi</option>
+	<option value="palakkad">palakkad</option>
+  </optgroup>
+  <optgroup label="Assam">
+    <option value="agartala">agartala</option>
+    <option value="burdwan">burdwan</option>
+	<option value="guhawati">guhawati</option>
+	<option value="imphal">imphal</option>
+  </optgroup>
+</select>
+
+</fieldset><br>
+
+<input type="reset" value="Reset">
+
+</form>
+
+<button onclick="showalert()" type="submit" form="form1" value="Submit" formmethod="post" formaction="/page2.php"><img src="data:image/jpeg;base64,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" alt="Submit" width="48" height="20"></button>   
+<script> 
+    function showalert() 
+	{ 
+        alert("Form is submitted"); 
+    } 
+</script>
+
+</body>
+</html>
