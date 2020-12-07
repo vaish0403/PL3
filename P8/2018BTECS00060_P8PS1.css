@@ -1,0 +1,11 @@
+body{
+		margin-top: 25px;
+		margin-bottom: 50px;
+		margin-right: 50px;
+		margin-left: 50px;
+		
+		border-style: solid;
+		border-width: 2px;
+		
+		font-family: 'Markazi Text', serif;
+	}

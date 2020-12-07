@@ -1,0 +1,91 @@
+<!DOCTYPE html5>
+<html>
+<head>
+<link rel="stylesheet" href="2018BTECS00060_P8PS2.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Markazi+Text">
+
+<style>
+
+	body{
+		margin-top: 25px;
+		margin-bottom: 50px;
+		margin-right: 50px;
+		margin-left: 50px;
+		
+		border-style: solid;
+		border-width: 2px;
+		
+		font-family: 'Markazi Text', serif;
+	}
+	
+</style>
+
+<title>Converting Centigrade to Fahrenheit</title>
+</head>
+
+<body>
+	<header><h1>C++ Program to Perform <sup>o</sup>Celsius to <sup>o</sup>Fahrenheit Conversion</h1></header>
+	
+	<nav style="margin-left: 25px;">
+		<h5><a href="https://www.google.com/search?q=celsius+to+fahrenheit&oq=celsiis+to+faren&aqs=chrome.1.69i57j0l7.8883j0j7&sourceid=chrome&ie=UTF-8">Celsius to Fahrenheit Calculator</a><br>
+		<a href="https://sillycodes.com/c-program-to-convert-temperature-from/">algorithm for conversion from celsius to fahrenheit</a></h5>
+	</nav>
+	<p style="margin-left: 25px;">
+	This C++ Program performs Celsius to Fahrenheit conversion.<br>
+	<small>(The program reads the temperature in <sup>o</sup>Celsius, multiplies the temperature in <sup>o</sup>Celsius by <sup>9</sup> / <sub>5</sub> and adds 32 to obtain temperature in <sup>o</sup>Fahrenheit.)</small><br>
+	</p>
+	
+
+  <article>
+	<p> 
+	<h3>Here is source code of the C++ program which performs Celsius to Fahrenheit conversion.</h3>
+	  <section id=code_block>
+		<code>
+		#include <<x>iostream><br>
+		using namespace std;<br>
+		int main()<br>
+		{<br>
+			&ensp; <s> int fahrenheit, celsius;</s><br>
+			&ensp; float fahrenheit, celsius;<br>
+			&ensp; cout << "Enter the temperature in Celsius : ";<br>
+			&ensp; cin >> celsius;<br>
+			&ensp; fahrenheit = (celsius * 9.0) / 5.0 + 32;<br>
+			&ensp; cout << "The temperature in Celsius    : " << celsius << endl;<br>
+			&ensp; cout << "The temperature in Fahrenheit : " << fahrenheit << endl;<br>
+			&ensp; return 0;<br>
+		}
+		</code>
+	  </section>
+	</p>
+	
+	
+	<aside>
+	<p>
+	Sample input : Enter the temperature in Celsius : <kbd>40</kbd> <br>
+	Sample output: <br>
+	<samp>
+	&ensp; The temperature in Celsius: 40<br>
+	&ensp; The temperature in Fahrenheit : 140
+	</samp>
+	</p>
+	</aside>
+ </article>
+	
+	<p><h4>Variables used in the program:</h4>
+	<ol>
+		<li><var>fahrenheit</var>: stores the temperature in fahrenheit</li>
+		<li><var>celsius</var>: stores the temperature in celsius</li>
+	</ol>
+	</p>
+	
+	<p>
+		<h4>Complexity:</h4>
+		&ensp; Time Complexity of the program is <b>O(1)</b><br>
+		&ensp; Space Complexity of the pragram is <b>O(1)</b>
+	</p>
+	
+	<footer >
+	<p><h6 style="text-align: right;margin-right: 25px;">Article Contributed By : Vaishnavi Shahaji Patil</h6></p>
+	</footer>
+</body>
+</html>
