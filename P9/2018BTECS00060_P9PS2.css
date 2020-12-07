@@ -1,0 +1,32 @@
+th {
+	  border: 2px solid black;
+	}
+	
+	td {
+	  border: 1px solid black;
+	}
+	
+	body{
+			margin-top: 25px;
+			margin-bottom: 50px;
+			margin-right: 50px;
+			margin-left: 50px;
+			
+			border-style: solid;
+			border-width: 2px;
+			
+			font-family: 'Markazi Text', serif;
+	}	
+	
+	h1{
+		color: white;
+		text-align: center;		
+		font-weight: bold;
+		background: #000000;
+		padding: 20px 6px 20px 6px;
+	}
+	
+	
+	a{
+		margin-left: 25px;
+	}
